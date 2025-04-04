@@ -106,7 +106,7 @@ function desenharChama(){
 function mostrarVelocidade(){
     
         mostrarIndicador(
-            mensagem = `velocidade: ${(moduloLunar.velocidade.y * 180/ Math.PI).toFixed(0)}`,
+            mensagem = `Velocidade: ${(moduloLunar.velocidade.y * 180/ Math.PI).toFixed(0)}`,
             x = 100,
             y = 40
     
@@ -117,7 +117,7 @@ function mostrarVelocidade(){
 
 function mostrarCombustivel(){
         mostrarIndicador(
-            mensagem = `combustivel: ${(moduloLunar.combustivel * 180/ Math.PI).toFixed(0)}`,
+            mensagem = `Combustivel: ${(moduloLunar.combustivel / 1000 * 100).toFixed(0)}%`,
             x = 100,
             y = 60
     
@@ -185,7 +185,7 @@ function mostrarIndicador(mensagem, x, y){
 
 function mostrarVelocidadeH(){
     mostrarIndicador(
-        mensagem = `velocidadeH: ${(moduloLunar.velocidade.x * 180/ Math.PI).toFixed(0)}`,
+        mensagem = `VelocidadeH: ${(moduloLunar.velocidade.x * 180/ Math.PI).toFixed(0)}`,
         x = 400,
         y = 60
 
@@ -194,7 +194,7 @@ function mostrarVelocidadeH(){
 
 function mostrarAngulo(){
     mostrarIndicador(
-        mensagem = `angulo: ${(moduloLunar.angulo * 180/ Math.PI).toFixed(0)}°`,
+        mensagem = `Angulo: ${(moduloLunar.angulo * 180/ Math.PI).toFixed(0)}°`,
         x = 400,
         y = 40
 
@@ -204,10 +204,10 @@ function mostrarAngulo(){
 
 function mostrarAltitude(){
     mostrarIndicador(
-        mensagem = `altitude: ${(canvas.height - moduloLunar.posicao.y 
+        mensagem = `Altitude: ${(canvas.height - moduloLunar.posicao.y 
                                 ).toFixed(0)}`,
-        x = 400,
-        y = 100
+        x = 600,
+        y = 40
     )
     
 }
